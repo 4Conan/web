@@ -1,0 +1,1 @@
+<? echo"<meta http-equiv=refresh content=0;url=../index.php>"; exit;?>;|文件管理系统|010-81881041|北京市|200|www.ip38.com/?ip=|leasin|678200|爱一网情深|on

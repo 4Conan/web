@@ -1,0 +1,6 @@
+[ 2020-04-03 15:19:11 (CST) ]  NOTICE:  Only variables should be passed by reference  F:\webPlan\DW\CNFLogin\test\2\WebFTP_3.6.2\config.php  第102行  
+[ 2020-04-03 15:24:14 (CST) ]  NOTICE:  Only variables should be passed by reference  F:\webPlan\DW\CNFLogin\test\2\WebFTP_3.6.2\config.php  第102行  
+[ 2020-04-03 15:40:22 (CST) ]  WARNING:  implode(): Invalid arguments passed  F:\webPlan\DW\CNFLogin\test\2\WebFTP_3.6.2\index.php  第472行  
+[ 2020-04-03 15:41:37 (CST) ]  WARNING:  implode(): Invalid arguments passed  F:\webPlan\DW\CNFLogin\test\2\WebFTP_3.6.2\index.php  第472行  
+[ 2020-04-03 15:59:22 (CST) ]  WARNING:  Invalid argument supplied for foreach()  F:\webPlan\DW\CNFLogin\test\2\WebFTP_3.6.2\core\FileFS.class.php  第277行  
+[ 2020-04-03 16:05:02 (CST) ]  NOTICE:  A non well formed numeric value encountered  F:\webPlan\DW\CNFLogin\test\2\WebFTP_3.6.2\core\PclZip.class.php  第868行  

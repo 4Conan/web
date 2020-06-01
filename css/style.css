@@ -1,0 +1,61 @@
+/* 媒体查询 根据 用户设备的屏幕尺寸来显示, */
+.all 				{width: 100%; 	height: 800px; background-color: pink;margin: auto;}
+.navigation			{height: 55px; background-color:#6F6F6F; }
+.main				{height: 650px; background-color: gray;}
+.main .navLeft		{width: 15%; 	height:650px ; background-color:cadetblue; float: left;}
+.main .info			{width: 85%; 	height:650px ; background-color:bisque;float: left;}
+.main .midright		{width: 0%; 	height:650px ; background-color: khaki;float: left;}
+.bottom				{height: 150px; background-color: yellow;}
+
+
+/* --------------------------------- 
+ 导航栏: UL LI a 导航栏
+ 1:UL 去除默认属性
+ 2:li 漂浮
+ 3:a变为块级元素
+ */
+#all ul{ margin: 0px; padding: 0px; list-style-type: none;
+	height: 60px; background-color: #C71585;}
+#all li{ float: left; width: 20%;height: 60px;}
+#all ul li a{display: block;height: 45px; text-align: center; font-size: 22px;
+font-family: "courier new"; font-weight: 700; color: white; text-decoration: none;
+/* 塞泡沫 */
+padding-top:15px;
+border-right: 2px solid white;
+}
+
+#tableInfo tr th, #tableInfo tr td
+{
+	text-align: center;
+	vertical-align: middle!important;
+}
+
+
+ fieldset{
+	padding:5px;
+	 clear:left;
+	margin:0 2px;
+	border:1px solid silver;
+}
+
+legend{
+   padding:5px;
+	border:0;
+	width:auto;
+	font-size:18px;
+	margin-bottom: 0px;
+}
+
+
+.nav-pills {
+  float: none;
+  text-align:center;
+}
+
+.nav-pills li a{
+    color: #000000;
+	font-size:15px;
+}
+
+
+

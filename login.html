@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">  <!--规定 HTML 文档的字符编码-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--将IE8使用edge进行渲染-->
+    <title>科凌峰远程管理系统</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!--方便移动端显示正常-->
+    <meta name="robots" content="all,follow"><!--可以让搜索引擎抓取-->
+    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/4.2.1/css/bootstrap.min.css"><!--包含bootstrap的css样式-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet"><!--自己的样式-->
+	<!--<script src="js/login.js"></script>自己的脚本
+	<script type="text/javascript" language="javascript" src="js/login.js" charset="utf-8"></script>-->
+	  
+	  <script type="text/javascript">
+			"use strict";
+			function loginClick()
+			{
+				alert("loginClick");
+				var username = document.getElementById("login-username").value;
+				var password = document.getElementById("login-password").value;
+				var obj = { "username":username, "password":password, "mode":"login" };
+				var s =  document.createElement("script");
+				s.src = "php/loginOrRegister.php?jsonStr="  + JSON.stringify(obj);
+				document.body.appendChild(s);
+				
+			}
+		 
+			function callbackHref(data)
+			{
+				alert(data.info);
+				var hrefArr = [" ", "home.php", "login.html"];
+				if(data.isSuccess)
+				{
+					var index = data.href;
+					if( index > 0)
+					{
+						window.location.href ="1/set.php";
+					}
+
+				}
+			}
+	</script>
+	  
+  </head>
+  <body>
+   <div class="page login-page">
+      <div class="container d-flex align-items-center">
+        <div class="form-holder has-shadow">
+          <div class="row">
+            <!-- Logo & Information Panel-->
+            <div class="col-lg-6">
+              <div class="info d-flex align-items-center">
+                <div class="content">
+                  <div class="logo">
+                    <h1>欢迎登录</h1>
+                  </div>
+                  <p>科凌峰远程管理系统</p>
+                </div>
+              </div>
+            </div>
+            <!-- Form Panel    -->
+            <div class="col-lg-6 bg-white">
+              <div class="form d-flex align-items-center">
+                <div class="content">
+
+					<div class="form-group">
+						<input id="login-username" type="text" name="userName" required data-msg="请输入用户名" placeholder="用户名"  class="input-material">
+					</div>
+					<div class="form-group">
+						 <input id="login-password" type="password" name="passWord" required data-msg="请输入密码" placeholder="密码"  class="input-material">
+					</div>
+					<button id="login" type="button" class="btn btn-primary" onClick="loginClick()">登录</button>
+
+					<br />
+					<small>没有账号?</small><a href="register.html" class="signup">&nbsp;注册</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	</div>
+  </body>
+</html>
